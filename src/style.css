@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Karla&family=Mulish:wght@500&family=Poppins:wght@300&family=Raleway&family=Rubik+Glitch&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Karla&family=Mulish:wght@500&family=Poppins:wght@300&family=Raleway&family=Rubik+Glitch&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Karla';
+}
+
+.header {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    color: #fff;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+}
+
+.left-header {
+    display: flex;
+    gap: 16px;
+}
+
+.title-header {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.right-header {
+    font-family: 'Inter';
+}
+
+.form {
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 17px;
+    padding-top: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.form-input {
+    border-radius: 6px;
+    font-size: 16px;
+    border: 1px solid #D5D4D8;
+    text-indent: 5px;
+}
+
+.form-btn {
+    grid-column: 1 / -1;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.meme-img {
+    max-width: 100%;
+    height: fit-content;
+    width: 400px;
+}
+
+.img-div {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+
+
+

@@ -3,73 +3,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Karla&family=Mulish:wght@500&family=Poppins:wght@300&family=Raleway&family=Rubik+Glitch&display=swap');
 
 * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Karla", sans-serif;
     margin: 0;
-    font-family: 'Karla';
+}
+
+main {
+    padding: 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .header {
-    padding-left: 40px;
-    padding-right: 40px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 75px;
-    color: #fff;
+    height: 65px;
     background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+    padding: 38px;
+    padding-left: 72px;
 }
 
-.left-header {
-    display: flex;
-    gap: 16px;
+.header--image {
+    /* height: 100%; */
+    margin-right: 12px;
+    width: 54px
 }
 
-.title-header {
-    font-weight: 600;
-    font-size: 30px;
+.header--title {
+    font-size: 28px;
+    margin-right: auto;
 }
 
-.right-header {
-    font-family: 'Inter';
+.header--project {
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 20px;
 }
 
 .form {
     display: grid;
     grid-template: 40px 40px / 1fr 1fr;
-    gap: 17px;
-    padding-top: 40px;
-    margin-left: 200px;
-    margin-right: 200px;
+    gap: 24px;
+    margin-bottom: 17px;
+    min-width: 700px;
 }
 
-.form-input {
-    border-radius: 6px;
-    font-size: 16px;
+.form--input {
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
     border: 1px solid #D5D4D8;
     text-indent: 5px;
+    font-size: 17px;
 }
 
-.form-btn {
+.form--btn {
     grid-column: 1 / -1;
-    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    font-family: "Karla", sans-serif;
     border-radius: 5px;
-    color: #fff;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    color: white;
     border: none;
-    font-size: 18px;
     cursor: pointer;
+    font-size: 18px;
 }
 
-.meme-img {
-    max-width: 100%;
-    height: fit-content;
-    width: 400px;
-}
-
-.img-div {
-    display: flex;
+.meme {
+    position: relative;
     justify-content: center;
-    padding: 40px;
+    margin-top: 16px;
 }
 
+.meme--img {
+    max-width: 100%;
+    border-radius: 3px;
+    max-height: 400px;
+}
 
+.meme--text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
 
+.bottom {
+    bottom: 0;
+}
 
+.top {
+    top: 0;
+}
